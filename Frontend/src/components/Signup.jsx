@@ -37,6 +37,7 @@ function Signup() {
         }
       });
   };
+
   return (
     <>
       <div className="flex h-screen items-center justify-center">
@@ -46,19 +47,19 @@ function Signup() {
               {/* if there is a button in form, it will close the modal */}
               <Link
                 to="/"
-                className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+                className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 bg-blue-400"
               >
-                ✕
+                ✕ 
               </Link>
 
-              <h3 className="font-bold text-lg">Signup</h3>
-              <div className="mt-4 space-y-2">
-                <span>Name</span>
+              <h3 className="font-bold text-lg text-slate-600">Signup</h3>
+              <div className="mt-4 space-y-2 ">
+                <span >Name</span>
                 <br />
                 <input
                   type="text"
                   placeholder="Enter your fullname"
-                  className="w-80 px-3 py-1 border rounded-md outline-none"
+                  className="w-80 px-3 py-1 border rounded-md outline-none border-2 border-slate-500"
                   {...register("fullname", { required: true })}
                 />
                 <br />
@@ -69,13 +70,13 @@ function Signup() {
                 )}
               </div>
               {/* Email */}
-              <div className="mt-4 space-y-2">
+              <div className="mt-4 space-y-2 text-slate-600">
                 <span>Email</span>
                 <br />
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-80 px-3 py-1 border rounded-md outline-none"
+                  className="w-80 px-3 py-1 border rounded-md outline-none border-2 border-slate-500"
                   {...register("email", { required: true })}
                 />
                 <br />
@@ -86,13 +87,13 @@ function Signup() {
                 )}
               </div>
               {/* Password */}
-              <div className="mt-4 space-y-2">
-                <span>Password</span>
+              <div className="mt-4 space-y-2  text-slate-500 ">
+                <span className="">Password</span>
                 <br />
                 <input
                   type="text"
-                  placeholder="Enter your password"
-                  className="w-80 px-3 py-1 border rounded-md outline-none"
+                  placeholder="Enter your password "
+                  className="w-80 px-3 py-1 border rounded-md outline-none border-2 border-slate-500"
                   {...register("password", { required: true })}
                 />
                 <br />
@@ -104,7 +105,7 @@ function Signup() {
               </div>
               {/* Button */}
               <div className="flex justify-around mt-4">
-                <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200">
+                <button className="bg-blue-500 text-white rounded-md px-3 py-1 hover:bg-blue-700 duration-200">
                   Signup
                 </button>
                 <p className="text-xl">
