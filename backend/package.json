@@ -1,11 +1,11 @@
 {
   "name": "bookstore",
   "version": "1.0.0",
-  "description": "mern backend bookstore",
+  "description": "mern bookstore project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":" node index.js"
+    "start":"node index.js"
   },
   "author": "mahto",
   "license": "ISC",
